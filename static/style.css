@@ -1,0 +1,151 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f3f6fb;
+    color: #1e293b;
+}
+
+header {
+    padding: 32px 20px;
+    background: #173b70;
+    color: white;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0 0 10px;
+}
+
+header p {
+    margin: 0;
+    color: #dbeafe;
+}
+
+main {
+    max-width: 850px;
+    margin: 28px auto;
+    padding: 0 16px;
+}
+
+.panel {
+    background: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 24px;
+    margin-bottom: 22px;
+    box-shadow: 0 4px 14px #0f172a0a;
+}
+
+h2 {
+    font-size: 20px;
+    margin-top: 0;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin: 16px 0 7px;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 7px;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+input:focus {
+    outline: 2px solid #93c5fd;
+    border-color: #2563eb;
+}
+
+.section-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+button, .download-link {
+    display: inline-block;
+    padding: 12px 16px;
+    border: none;
+    border-radius: 7px;
+    background: #2563eb;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+button:hover, .download-link:hover {
+    background: #1d4ed8;
+}
+
+button:disabled {
+    opacity: 0.6;
+    cursor: wait;
+}
+
+button.secondary {
+    background: #e8effb;
+    color: #173b70;
+}
+
+.recipient {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-bottom: 8px;
+}
+
+#certificateForm > button[type="submit"] {
+    width: 100%;
+    margin-top: 18px;
+}
+
+#message {
+    white-space: pre-wrap;
+    line-height: 1.6;
+}
+
+.result-item, .job-item {
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 14px;
+    margin-top: 12px;
+    overflow-wrap: anywhere;
+}
+
+.result-item p, .job-item p {
+    margin: 5px 0;
+}
+
+.muted {
+    color: #64748b;
+    font-size: 14px;
+}
+
+@media (max-width: 600px) {
+    .recipient {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .panel {
+        padding: 18px;
+    }
+
+    .section-heading {
+        align-items: flex-start;
+    }
+}

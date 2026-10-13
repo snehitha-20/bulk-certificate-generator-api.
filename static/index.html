@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulk Certificate Generator</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <header>
+        <h1>Certificate Studio</h1>
+        <p>Generate personalized certificates in seconds.</p>
+    </header>
+
+    <main>
+        <section class="panel">
+            <h2>Event Details</h2>
+
+            <form id="certificateForm">
+                <label for="eventName">Event name</label>
+                <input id="eventName" type="text"
+                       placeholder="e.g. Python Workshop" required>
+
+                <label for="eventDate">Event date</label>
+                <input id="eventDate" type="date" required>
+
+                <div class="section-heading">
+                    <h2>Recipients</h2>
+                    <button type="button" id="addRecipient"
+                            class="secondary">+ Add recipient</button>
+                </div>
+
+                <div id="recipients">
+                    <div class="recipient">
+                        <input class="recipient-name" type="text"
+                               placeholder="Recipient name" required>
+                        <input class="recipient-email" type="email"
+                               placeholder="Email address" required>
+                    </div>
+                </div>
+
+                <button type="submit" id="generateButton">
+                    Generate Certificates
+                </button>
+            </form>
+
+            <p id="message" role="status"></p>
+        </section>
+
+        <section class="panel">
+            <h2>Generation Results</h2>
+            <div id="results">
+                <p>Your generated certificates will appear here.</p>
+            </div>
+        </section>
+
+        <section class="panel">
+            <div class="section-heading">
+                <h2>Previous Jobs</h2>
+                <button type="button" id="refreshJobs" class="secondary">
+                    Refresh
+                </button>
+            </div>
+            <div id="jobs">
+                <p>Loading jobs...</p>
+            </div>
+        </section>
+    </main>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
