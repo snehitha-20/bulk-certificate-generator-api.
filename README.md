@@ -294,7 +294,8 @@ This project provides practical experience with:
 
 **Developed as a Python backend and full-stack web development project.**
 
-GitHub: .
+GitHub:https://github.com/snehitha-20/bulk-certificate-generator-api
+
 
 ---
 
