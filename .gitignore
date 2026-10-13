@@ -1,0 +1,25 @@
+
+# Python cache files
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Virtual environment
+.venv/
+venv/
+
+# Local database
+certificates.db
+*.db
+
+# Generated certificate PDFs
+generated_certificates/
+*.pdf
+
+# Environment variables and secrets
+.env
+
+# Editor and operating system files
+.vscode/
+.DS_Store
+Thumbs.db
